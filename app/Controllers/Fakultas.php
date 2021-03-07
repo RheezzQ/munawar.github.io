@@ -43,4 +43,13 @@ class Fakultas extends BaseController
         session()->setFlashdata('pesan', 'Data Berhasil Diupdate');
         return redirect()->to(base_url('fakultas'));
     }
+    public function delete($id_fakultas)
+    {
+        $data = [
+            'id_fakultas' => $id_fakultas,
+        ];
+        $this->ModelFakultas->delete_data($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
+        return redirect()->to(base_url('fakultas'));
+    }
 }

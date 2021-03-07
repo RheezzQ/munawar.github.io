@@ -29,9 +29,9 @@ class Auth extends BaseController
                 'errors' =>  ['required' => '{field} Wajib Diisi !']
             ],
             'level' => [
-                'label' =>  'Level',
+                'label' =>  'Hak Akses',
                 'rules'  =>  'required',
-                'errors' =>  ['required' => '{field} Wajib Diisi !']
+                'errors' =>  ['required' => '{field} Wajib Dipilih !']
             ],
             'password' => [
                 'label' =>  'Password',
